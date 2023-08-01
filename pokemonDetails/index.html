@@ -1,0 +1,56 @@
+<html> 
+  <head> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./index.js"></script>
+</head> 
+<style>
+    .container{
+        margin: 10px 25% 0;
+        background-color: #F7F7F7;
+        align-items: center;
+        max-width: 50%;
+        
+    }
+    .image{
+        text-align: center;
+    }
+    .form{
+        margin: 0 25%;
+        background-color: #F7F7F7;
+    }
+    .tb{
+        text-align: center;
+    }
+</style>
+<body> 
+    <div class="container">
+        <label>Pokemon</label><br>
+        <input id="pokemonName" type="search" style="margin-bottom: 5px; width:100%;"></input><br>
+        <button type="button" class="btn btn-primary btn-sm btn-block" onclick="searchPokemon()">Search</button><br>
+        <label id="errorMessage" style="color: red;"></label>
+    </div>
+    <div>
+    <div id="divForm" class="form" style="display: none;">
+        <div class="image">
+            <label id="name" style="font-size: 30px;"></label><br>
+            <img id="img">
+        </div>
+        <div>
+        <table class="table table-bordered table-sm table-light table-striped tb">
+            <thead>
+              <tr class="table-success">
+                <th scope="col">Number</th>
+                <th scope="col">Type</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Height</th>
+              </tr>
+            </thead>
+            <tbody id="tableDates">
+            </tbody>
+          </table>
+    </div>
+    </div>
+    </div>
+    </div>
+</body> 
+</html> 

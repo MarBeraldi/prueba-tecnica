@@ -1,0 +1,31 @@
+<html> 
+  <head> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./index.js"></script>
+</head> 
+<style>
+    .container{
+        margin: 13px;
+        background-color: #F7F7F7;
+    }
+</style>
+<body> 
+    <div class="container">
+        <label style="font-family: 'Times New Roman', Times, serif;">Password</label><br>
+        <input id="pass" type="password" style="margin-bottom: 5px; width:100%;" onkeypress="verify()"></input>
+        <button type="button" class="btn btn-success btn-lg btn-block" style="margin-top: 10px;" onclick="verify()">Submit</button>
+    </div>
+    <div id="div" class="container" style="display: none;">
+        <label id="text" style="font-weight: bold ; margin-top: 8px;" ></label><br>
+        <label id="minimumCharacters"></label><br>
+        <label id="uppercaseLetter"></label><br>
+        <label id="lowercaseLetter"></label><br>
+        <label id="noConsecutiveLetter"></label><br>
+        <label id="HasFourNumbers"></label><br>
+        <label id="noConsecutiveNumbers"></label><br>
+        <label id="specialChars"></label><br>
+        <label id="notZero"></label><br>
+        <label id="notSpace"></label><br>
+    </div>
+</body> 
+</html> 
